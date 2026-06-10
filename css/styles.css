@@ -1,166 +1,341 @@
 * {
-  box-sizing: border-box;/*se ajusta al tamaño del contenedor*/
-}
-
-body {
+  box-sizing: border-box;
+ }
+ 
+ 
+ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
   background-color: white;
-}
-/*inicio del header*/
-header{
+ }
+ 
+ 
+ /* HEADER */
+ 
+ 
+ header {
   background-color: #000;
-}
-#logos{
+ }
+ 
+ 
+ #logos {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
   justify-content: space-between;
-}
-#copa img{
-  width: 100px;
-}
-#fifa img{
+  align-items: center;
+  padding: 10px;
+ }
+ 
+ 
+ #fifa img {
   width: 191px;
-}
-/*fin del header*/
-
-/*comienzo nav*/
-nav {
-  
+ }
+ 
+ 
+ #copa img {
+  width: 100px;
+ }
+ 
+ 
+ /* NAV */
+ 
+ 
+ nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  align-items: center;
   gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
+  padding: 0.5rem;
   background-color: #eee;
+  border-bottom: 1px solid #aaa;
   text-transform: uppercase;
-}
-
-nav a {
+ }
+ 
+ 
+ nav a {
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
+  border: 1px solid #aaa;
   border-radius: 0.2rem;
-  border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
   color: #555;
-}
-
-nav a[aria-current='page'] {
-  color: #000;
+  background-color: white;
+ }
+ 
+ 
+ nav a:hover {
   background-color: #d4d4d4;
-}
-.activo{
+ }
+ 
+ 
+ .activo {
+  border-bottom: 5px solid rgb(105, 43, 43);
   box-shadow: 5px 5px lightgray;
-}
-/*fin nav*/
-/*inicio main*/
-
-section{
-  width: 1000px;
-  height: 400px;
-  background-color: thistle;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-section div{
-  width: 33%;
-  height: 350px;
-  background-color: yellow;
-  height: 170px;
-margin: 5px;
-}
-#intro{
-  background-image: url(https://images.unsplash.com/photo-1544656376-ffe19d4b7353?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2llbG8lMjBuZWdyb3xlbnwwfHwwfHx8MA%3D%3D);
-box-shadow: 5px 3px grey;
-border-radius: 15px;
-
-}
-#eeuu{
-background-image: url(../img/Flag_of_the_United_States_\(1912-1959\).svg.png);
-background-size: cover;
-
-}
-
-#mx{
-  background-image: url(../img/Flag_of_Mexico.svg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
-  #can{
-    background-image: url(../img/Flag_of_Canada.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-
-  }
-
-/*fin main*/
-/*comienzo de estadios*/
-table{
-background-color: blue;
-
-}
-
-/*inicio del footer*/ 
-footer{   
-  background-color: red;
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-#colegio{
-  width: 33%;
-  background-color: red;
-  padding: 5px;
-} 
-#colegio a{
-color: #d4d4d4;
-}
-
-#alumno{
-  width: 33%;
-  background-color: yellow;
-  color: #aaa;
-  padding: 5px;
-}
-#alumno a{ 
-  color: #aaa;
-}
-#redes{ 
-  width: 33%;
-  background-color: lightblue;
-  padding: 5px;
-}
-#redes img{
-  width: 50px;
-}
-/*fin del footer*/
-
-
-
-
-
-
-
-main {
+  color: #000;
+ }
+ 
+ 
+ /* MAIN */
+ 
+ 
+ main {
   padding: 1rem;
-}
-
-h1 {
-  font-weight: bold;
+ }
+ 
+ 
+ /* SECTIONS */
+ 
+ 
+ section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ 
+ /* BANDERAS */
+ 
+ 
+ #banderas {
+  width: 100%;
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
+ 
+  gap: 15px;
+ 
+ 
+  padding-top: 20px;
+ }
+ 
+ 
+ #banderas div {
+  flex: 1;
+  height: 250px;
+  border-radius: 10px;
+ }
+ 
+ 
+ /* BANDERAS IMAGENES */
+ 
+ 
+ #eeuu {
+  background-image: url(../img/banderaeeuu.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+ 
+ #mx {
+  background-image: url(../img/banderamex.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+ 
+ #can {
+  background-image: url(../img/banderacan.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ 
+ 
+ /* ESTADIO */
+ #estadosunidosunidos,#estadosunidos tr,#estadosunidos td, #estadosunidos th{
+ border: solid coral 3px;
+ border-collapse: collapse;
+ }
+ #estadosunidos img{
+  width: 200px;
+ }
+ 
+ #intro {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+ 
+ 
+  margin: 0 auto 20px auto;
+ 
+ 
+  border-radius: 15px;
+ 
+ 
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMMOyeLQIlES7G2Bah7s3LlYUsC6FZB3uBQ&s);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+ 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ 
+ 
+  padding-top: 20px;
+ }
+ 
+ 
+ 
+ 
+ /* VIDEO */
+ 
+ 
+ iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+ }
+ 
+ 
+ /* FOOTER */
+ 
+ 
+ footer {
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  padding: 10px;
+ }
+ 
+ 
+ #colegio,
+ #alumno,
+ #redes {
+  flex: 1;
+  min-width: 250px;
+  padding: 15px;
+ }
+ 
+ 
+ /* CUADROS */
+ 
+ 
+ #colegio {
+  background-color: red;
+ }
+ 
+ 
+ #alumno {
+  background-color: yellow;
+  color: black;
+ }
+ 
+ 
+ #redes {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+ }
+ 
+ 
+ /* ICONOS */
+ 
+ 
+ #redes img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+ }
+ 
+ 
+ /* TEXTOS */
+ 
+ 
+ h1 {
   font-size: 1.5rem;
-}
+  font-weight: bold;
+ }
+ .multimedia{
+  width: 800px;
+  background-color: #aaa;
+ }
+ .multimedia video{
+  width: 600px;
+ }
+
+
+ 
+ h3 {
+  margin-top: 0;
+ }
+ 
+ 
+ a {
+  color: inherit;
+ }
+ 
+ 
+ /* RESPONSIVE */
+ 
+ 
+ @media (max-width: 768px) {
+  #logos {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+ 
+  #banderas {
+    width: 90%;
+     display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+ 
+ 
+  #banderas div {
+    width: 180px;
+    height: 120px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+ 
+ 
+  #intro {
+    height: 250px;
+  }
+ 
+ 
+  iframe {
+    height: 300px;
+  }
+ 
+ 
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+ 
+  nav a {
+    width: 100%;
+  }
+ }
+ 
+ 
