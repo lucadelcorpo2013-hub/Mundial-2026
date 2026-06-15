@@ -127,72 +127,52 @@
  
  /* BANDERAS IMAGENES */
  
- 
  #eeuu {
-  background-image: url(../img/banderaeeuu.png);
+  background-image: url(../img/eeuu.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
- }
- 
- 
- #mx {
-  background-image: url(../img/banderamex.png);
+}
+
+#mx {
+  background-image: url(../img/mexico.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
- }
- 
- 
- #can {
-  background-image: url(../img/banderacan.svg);
+}
+
+#can {
+  background-image: url(../img/canada.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
- }
+}
  
- 
- /* ESTADIO */
- #estadosunidosunidos,#estadosunidos tr,#estadosunidos td, #estadosunidos th{
- border: solid coral 3px;
- border-collapse: collapse;
- }
- #estadosunidos img{
-  width: 200px;
- }
- 
- #intro {
-  width: 100%;
-  max-width: 900px;
-  height: 400px;
- 
- 
-  margin: 0 auto 20px auto;
- 
- 
-  border-radius: 15px;
- 
- 
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdMMOyeLQIlES7G2Bah7s3LlYUsC6FZB3uBQ&s);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- 
- 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
- 
- 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
- 
- 
-  padding-top: 20px;
- }
- 
- 
- 
- 
+ /* TABLAS DE ESTADIOS */
+
+table{
+  background-color: white;
+  border: 3px solid coral;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table td,
+table th{
+  border: 2px solid coral;
+  text-align: center;
+  padding: 8px;
+}
+
+/* TODAS LAS IMÁGENES DE LOS ESTADIOS */
+td img{
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 3px;
+}
  /* VIDEO */
  
  
@@ -302,20 +282,26 @@
  
  
   #banderas {
-    width: 90%;
-     display: flex;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 15px;
+    padding-top: 20px;
+  
+    background-image: url("https://www.clarin.com/2025/06/17/IOfIZWHY5_2000x1500__1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
   }
+  
  
  
   #banderas div {
-    width: 180px;
-    height: 120px;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    flex: 1;
+    height: 250px;
+    border-radius: 10px;
   }
- 
  
   #intro {
     height: 250px;
@@ -337,5 +323,45 @@
     width: 100%;
   }
  }
- 
- 
+ h2{
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.pais{
+  width: 150px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#eeuu {
+  background-image: url("../img/estadosunidos.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#eeuu {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mx {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#can {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
