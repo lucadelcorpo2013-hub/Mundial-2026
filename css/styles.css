@@ -104,18 +104,14 @@
  
  #banderas {
   width: 100%;
- 
- 
   display: flex;
   justify-content: center;
   align-items: flex-start;
- 
- 
   gap: 15px;
- 
- 
   padding-top: 20px;
- }
+  background-image: url(https://media.istockphoto.com/id/2206836726/es/foto/gran-angular-del-estadio-de-f%C3%BAtbol-moderno-con-techo-de-cristal-luces-brillantes-del-estadio.jpg?s=612x612&w=0&k=20&c=QpPFXe76IQgz2Pa1KNXHqeUW2Fyvy5gHBeLb35jsqU4=);
+}
+
  
  
  #banderas div {
