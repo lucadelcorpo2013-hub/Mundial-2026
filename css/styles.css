@@ -208,7 +208,37 @@ font-size: 14px;
   display: grid;
   grid-template-columns: 1fr 1fr; /*Divido en dos columnas para las fotos*/
 }
+/*El  titulo del pais ocupa las dos columnas */
+.pais{
+  grid-column: span 2;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
 
+/* Las fotos se acomodan una al lado de la otra automaticamente (50% cada una) */
+.foto {
+  min-height: 120px; /*espacio para la imagen*/
+  padding: 35px 10px 10px;
+  font-size: 11px;
+  border-bottom: 2px solid black;
+}
+
+
+/*Borde vertical divisor solo en la primera foto*/
+.foto:nth-of-type(odd){
+  border-right: 2px solid black;
+}
+
+
+/* La resenia se salta al fondo ocupando las dos columnas*/
+.resenia {
+  grid-column: span 2;
+  padding: 10px;
+  min-height: 80px;
+  font-size: 11px;
+}
 
 
  .multimedia{
