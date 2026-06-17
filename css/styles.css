@@ -1,45 +1,29 @@
 * {
   box-sizing: border-box;
  }
- 
- 
  body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
   background-color: white;
  }
- 
- 
  /* HEADER */
- 
- 
  header {
   background-color: #000;
  }
- 
- 
  #logos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
  }
- 
- 
  #fifa img {
   width: 191px;
  }
- 
- 
  #copa img {
   width: 100px;
  }
- 
- 
  /* NAV */
- 
- 
  nav {
   display: flex;
   flex-wrap: wrap;
@@ -51,8 +35,6 @@
   border-bottom: 1px solid #aaa;
   text-transform: uppercase;
  }
- 
- 
  nav a {
   display: inline-block;
   min-width: 9rem;
@@ -64,31 +46,19 @@
   color: #555;
   background-color: white;
  }
- 
- 
  nav a:hover {
   background-color: #d4d4d4;
  }
- 
- 
  .activo {
   border-bottom: 5px solid rgb(105, 43, 43);
   box-shadow: 5px 5px lightgray;
   color: #000;
  }
- 
- 
  /* MAIN */
- 
- 
  main {
   padding: 1rem;
  }
- 
- 
  /* SECTIONS */
- 
- 
  section {
   width: 100%;
   max-width: 900px;
@@ -97,11 +67,7 @@
   justify-content: center;
   align-items: center;
  }
- 
- 
  /* BANDERAS */
- 
- 
  #banderas {
   width: 100%;
   display: flex;
@@ -110,8 +76,7 @@
   gap: 15px;
   padding-top: 20px;
   background-image: url(https://media.istockphoto.com/id/2206836726/es/foto/gran-angular-del-estadio-de-f%C3%BAtbol-moderno-con-techo-de-cristal-luces-brillantes-del-estadio.jpg?s=612x612&w=0&k=20&c=QpPFXe76IQgz2Pa1KNXHqeUW2Fyvy5gHBeLb35jsqU4=);
-}
-
+ }
  
  
  #banderas div {
@@ -119,59 +84,58 @@
   height: 250px;
   border-radius: 10px;
  }
- 
- 
  /* BANDERAS IMAGENES */
- 
  #eeuu {
   background-image: url(../img/eeuu.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-#mx {
+ }
+ 
+ 
+ #mx {
   background-image: url(../img/mexico.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-#can {
+ }
+ 
+ 
+ #can {
   background-image: url(../img/canada.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
- 
+ }
  /* TABLAS DE ESTADIOS */
-
-table{
+ 
+ 
+ table{
   background-color: white;
   border: 3px solid coral;
   border-collapse: collapse;
   margin: 0 auto;
-}
-
-table td,
-table th{
+ }
+ 
+ 
+ table td,
+ table th{
   border: 2px solid coral;
   text-align: center;
   padding: 8px;
-}
-
-/* TODAS LAS IMÁGENES DE LOS ESTADIOS */
-td img{
+ }
+ 
+ 
+ /* TODAS LAS IMÁGENES DE LOS ESTADIOS */
+ td img{
   width: 250px;
   height: 150px;
   object-fit: cover;
   border: 3px solid #333;
   border-radius: 8px;
   padding: 3px;
-}
+ }
  /* VIDEO */
- 
- 
  iframe {
   width: 100%;
   max-width: 900px;
@@ -181,11 +145,7 @@ td img{
   display: block;
   margin: 0 auto;
  }
- 
- 
  /* FOOTER */
- 
- 
  footer {
   background-color: #000;
   color: white;
@@ -196,8 +156,6 @@ td img{
   gap: 10px;
   padding: 10px;
  }
- 
- 
  #colegio,
  #alumno,
  #redes {
@@ -205,22 +163,14 @@ td img{
   min-width: 250px;
   padding: 15px;
  }
- 
- 
  /* CUADROS */
- 
- 
  #colegio {
   background-color: red;
  }
- 
- 
  #alumno {
   background-color: yellow;
   color: black;
  }
- 
- 
  #redes {
   background-color: lightseagreen;
   display: flex;
@@ -228,21 +178,13 @@ td img{
   align-items: center;
   gap: 15px;
  }
- 
- 
  /* ICONOS */
- 
- 
  #redes img {
   width: 50px;
   height: 50px;
   object-fit: contain;
  }
- 
- 
  /* TEXTOS */
- 
- 
  h1 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -254,29 +196,22 @@ td img{
  .multimedia video{
   width: 600px;
  }
-
-
+ 
+ 
+ 
  
  h3 {
   margin-top: 0;
  }
- 
- 
  a {
   color: inherit;
  }
- 
- 
  /* RESPONSIVE */
- 
- 
  @media (max-width: 768px) {
   #logos {
     flex-direction: column;
     gap: 10px;
   }
- 
- 
   #banderas {
     width: 100%;
     display: flex;
@@ -284,37 +219,26 @@ td img{
     align-items: flex-start;
     gap: 15px;
     padding-top: 20px;
-  
-    background-image: url("https://www.clarin.com/2025/06/17/IOfIZWHY5_2000x1500__1.jpg");
+     background-image: url("https://www.clarin.com/2025/06/17/IOfIZWHY5_2000x1500__1.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 10px;
   }
-  
- 
- 
-  #banderas div {
+   #banderas div {
     flex: 1;
     height: 250px;
     border-radius: 10px;
   }
- 
   #intro {
     height: 250px;
   }
- 
- 
   iframe {
     height: 300px;
   }
- 
- 
   footer {
     flex-direction: column;
     text-align: center;
   }
- 
- 
   nav a {
     width: 100%;
   }
@@ -325,39 +249,48 @@ td img{
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 15px;
-}
-
-
-.pais{
+ }
+ 
+ 
+ 
+ 
+ .pais{
   width: 150px;
   font-size: 25px;
   font-weight: bold;
-}
-
-#eeuu {
+ }
+ 
+ 
+ #eeuu {
   background-image: url("../img/estadosunidos.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-#eeuu {
+ }
+ 
+ 
+ #eeuu {
   background-image: url("https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#mx {
+ }
+ 
+ 
+ #mx {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#can {
+ }
+ 
+ 
+ #can {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
+ }
+ 
+ 
+ 
