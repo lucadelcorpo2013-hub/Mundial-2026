@@ -189,6 +189,28 @@
   font-size: 1.5rem;
   font-weight: bold;
  }
+/*campeones********/
+.campeones {
+  display:grid;
+  grid-template-columns: 1fr 3fr; /* 25% para continente, 75% para paises */
+  border: 2px solid rgb(0, 0, 0);
+  width:100%;
+}
+/*Columna izquierda: Continente ocupara todo el alto disponible automaticamente*/
+.continente {
+border-right: 2px solid rgb(0, 0, 0);
+padding: 15px 10px;
+font-weight: bold;
+font-size: 14px;
+}
+/*Columna Derecha: Se convierte en otro Grid para organizar el continente interno*/
+.paises{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*Divido en dos columnas para las fotos*/
+}
+
+
+
  .multimedia{
   width: 800px;
   background-color: #aaa;
